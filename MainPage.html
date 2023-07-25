@@ -6,7 +6,9 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  <div class="container">
     <h1>Bảng tuần hoàn hóa học</h1>
+    <div class="table-wrapper">
     <table class="table1">
         <thead>
             <th class="empty"></th>
@@ -30,7 +32,11 @@
         <tbody>
             <tr>
                 <td class="stcol">1</td>
-                <td class="phiKim sub">H <div class="name">Hydrogen </div> <div class="number">1</div></td>
+                <td class="phiKim sub">H 
+                    <div class="name">Hydrogen</div> 
+                    <div class="number">1</div> 
+                    <div class="weight">1</div>
+                </td>
                 <td class="empty"></td>
                 <td class="empty"></td>
                 <td class="empty"></td>
@@ -45,12 +51,24 @@
                 <td class="empty"></td>
                 <td class="empty"></td>
                 <td class="empty"></td>
-                <td class="khiHiem sub">He <div class="name">Heli</div> <div class="number">2</div></td>
+                <td class="khiHiem sub">He 
+                    <div class="name">Helium</div> 
+                    <div class="number">2</div> 
+                    <div class="weight">4</div>
+                </td>
             </tr>
             <tr>
                 <td class="stcol">2</td>
-                <td class="klKiem sub">Li <div class="name">Lithi</div> <div class="number">3</div></td>
-                <td class="klKiemTho sub">Be <div class="name">Berylli</div> <div class="number">4</div></td>
+                <td class="klKiem sub">Li 
+                    <div class="name">Lithium</div> 
+                    <div class="number">3</div> 
+                    <div class="weight">7</div>
+                </td>
+                <td class="klKiemTho sub">Be 
+                    <div class="name">Beryllium</div> 
+                    <div class="number">4</div> 
+                    <div class="weight">9</div>
+                </td>
                 <td class="empty"></td>
                 <td class="empty"></td>
                 <td class="empty"></td>
@@ -59,17 +77,49 @@
                 <td class="empty"></td>
                 <td class="empty"></td>
                 <td class="empty"></td>
-                <td class="aKim sub">B <div class="name">Boron </div> <div class="number">5</div></td>
-                <td class="phiKim sub">C <div class="name">Carbon </div> <div class="number">6</div></td>
-                <td class="phiKim sub">N <div class="name">Nitrogen </div> <div class="number">7</div></td>
-                <td class="phiKim sub">O <div class="name">Oxygen </div> <div class="number">8</div></td>
-                <td class="phiKim sub">F <div class="name">Fluorine </div> <div class="number">9</div></td>
-                <td class="khiHiem sub">Ne <div class="name">Neon </div> <div class="number">10</div></td>
+                <td class="aKim sub">B 
+                    <div class="name">Boron</div> 
+                    <div class="number">5</div> 
+                    <div class="weight">11</div>
+                </td>
+                <td class="phiKim sub">C 
+                    <div class="name">Carbon</div> 
+                    <div class="number">6</div> 
+                    <div class="weight">12</div>
+                </td>
+                <td class="phiKim sub">N 
+                    <div class="name">Nitrogen</div> 
+                    <div class="number">7</div> 
+                    <div class="weight">14</div>
+                </td>
+                <td class="phiKim sub">O 
+                    <div class="name">Oxygen</div> 
+                    <div class="number">8</div> 
+                    <div class="weight">16</div>
+                </td>
+                <td class="phiKim sub">F 
+                    <div class="name">Fluorine</div> 
+                    <div class="number">9</div> 
+                    <div class="weight">19</div>
+                </td>
+                <td class="khiHiem sub">Ne 
+                    <div class="name">Neon</div> 
+                    <div class="number">10</div> 
+                    <div class="weight">20</div>
+                </td>
             </tr>
             <tr>
                 <td class="stcol">3</td>
-                <td class="klKiem sub">Na <div class="name">Sodi </div> <div class="number">11</div></td>
-                <td class="klKiemTho sub">Mg <div class="name">Magnesi</div> <div class="number">12</div></td>
+                <td class="klKiem sub">Na 
+                    <div class="name">Sodium</div> 
+                    <div class="number">11</div> 
+                    <div class="weight">23</div>
+                </td>
+                <td class="klKiemTho sub">Mg 
+                    <div class="name">Magnesium</div> 
+                    <div class="number">12</div> 
+                    <div class="weight">24</div>
+                </td>
                 <td class="empty"></td>
                 <td class="empty"></td>
                 <td class="empty"></td>
@@ -78,189 +128,630 @@
                 <td class="empty"></td>
                 <td class="empty"></td>
                 <td class="empty"></td>
-                <td class="klHauChuyenTiep sub">Al <div class="name">Aluminum</div> <div class="number">13</div></td>
-                <td class="aKim sub">Si <div class="name">Silicon</div> <div class="number">14</div></td>
-                <td class="phiKim sub">P <div class="name">Phosphorus </div> <div class="number">15</div></td>
-                <td class="phiKim sub">S <div class="name">Sulfur </div> <div class="number">16</div></td>
-                <td class="phiKim sub">Cl <div class="name">Chlorine </div> <div class="number">17</div></td>
-                <td class="khiHiem sub">Ar <div class="name">Argon</div> <div class="number">18</div></td>
+                <td class="klHauChuyenTiep sub">Al 
+                    <div class="name">Aluminum</div> 
+                    <div class="number">13</div> 
+                    <div class="weight">27</div>
+                </td>
+                <td class="aKim sub">Si 
+                    <div class="name">Silicon</div> 
+                    <div class="number">14</div> 
+                    <div class="weight">28</div>
+                </td>
+                <td class="phiKim sub">P 
+                    <div class="name">Phosphorus</div> 
+                    <div class="number">15</div> 
+                    <div class="weight">31</div>
+                </td>
+                <td class="phiKim sub">S 
+                    <div class="name">Sulfur</div> 
+                    <div class="number">16</div> 
+                    <div class="weight">32</div>
+                </td>
+                <td class="phiKim sub">Cl 
+                    <div class="name">Chlorine</div> 
+                    <div class="number">17</div> 
+                    <div class="weight">35.5</div>
+                </td>
+                <td class="khiHiem sub">Ar 
+                    <div class="name">Argon</div> 
+                    <div class="number">18</div> 
+                    <div class="weight">40</div>
+                </td>
             </tr>
             <tr>
                 <td class="stcol sub">4</td>
-                <td class="klKiem sub">K <div class="name">Potassi</div> <div class="number">19</div></td>
-                <td class="klKiemTho sub">Ca <div class="name">Calci</div> <div class="number">20</div></td>
-                <td class="KlChuyenTiep sub">Sc <div class="name">Scandi</div> <div class="number">21</div></td>
-                <td class="KlChuyenTiep sub">Ti <div class="name">Titani</div> <div class="number">22</div></td>
-                <td class="KlChuyenTiep sub">V <div class="name">Vanadi</div> <div class="number">23</div></td>
-                <td class="KlChuyenTiep sub">Cr <div class="name">Chromi</div> <div class="number">24</div></td>
-                <td class="KlChuyenTiep sub">Mn <div class="name">Manganese</div> <div class="number">25</div></td>
-                <td class="VIII">
-                    <table class="VIIITable">
-                        <tr>
-                            <td class="KlChuyenTiep sub">Fe <div class="name">Iron</div> <div class="number">26</div></td>
-                            <td class="KlChuyenTiep sub">Co <div class="name">Cobalt</div> <div class="number">27</div></td>
-                            <td class="KlChuyenTiep sub">Ni <div class="name">Nickel</div> <div class="number">28</div></td>
-                        </tr>
-                    </table>
+                <td class="klKiem sub">K 
+                    <div class="name">Potassium</div> 
+                    <div class="number">19</div> 
+                    <div class="weight">39</div>
                 </td>
-                <td class="KlChuyenTiep sub">Cu <div class="name">Copper</div> <div class="number">29</div></td>
-                <td class="KlChuyenTiep sub">Zn <div class="name">Zinc</div> <div class="number">30</div></td>
-                <td class="klHauChuyenTiep sub">Ga <div class="name">Galli</div> <div class="number">31</div></td>
-                <td class="aKim sub">Ge <div class="name">Germani</div> <div class="number">32</div></td>
-                <td class="aKim sub">As <div class="name">Arsenic</div> <div class="number">33</div></td>
-                <td class="phiKim sub">Se <div class="name">Seleni</div> <div class="number">34</div></td>
-                <td class="phiKim sub">Br <div class="name">Bromine</div> <div class="number">35</div></td>
-                <td class="khiHiem sub">Kr <div class="name">Krypton</div> <div class="number">36</div></td>
+                <td class="klKiemTho sub">Ca 
+                    <div class="name">Calcium</div> 
+                    <div class="number">20</div> 
+                    <div class="weight">40</div>
+                </td>
+                <td class="KlChuyenTiep sub">Sc 
+                    <div class="name">Scandium</div> 
+                    <div class="number">21</div> 
+                    <div class="weight">45</div>
+                </td>
+                <td class="KlChuyenTiep sub">Ti 
+                    <div class="name">Titanium</div> 
+                    <div class="number">22</div> 
+                    <div class="weight">48</div>
+                </td>
+                <td class="KlChuyenTiep sub">V 
+                    <div class="name">Vanadium</div> 
+                    <div class="number">23</div> 
+                    <div class="weight">51</div>
+                </td>
+                <td class="KlChuyenTiep sub">Cr 
+                    <div class="name">Chromium</div> 
+                    <div class="number">24</div> 
+                    <div class="weight">52</div>
+                </td>
+                <td class="KlChuyenTiep sub">Mn 
+                    <div class="name">Manganese</div> 
+                    <div class="number">25</div> 
+                    <div class="weight">55</div>
+                </td>
+                <td class="VIII">
+                <table class="VIIITable">
+                    <tr>
+                    <td class="KlChuyenTiep sub">Fe 
+                            <div class="name">Iron</div> 
+                            <div class="number">26</div> 
+                            <div class="weight">56</div>
+                    </td>
+                    <td class="KlChuyenTiep sub">Co 
+                            <div class="name">Cobalt</div> 
+                            <div class="number">27</div> 
+                            <div class="weight">59</div>
+                    </td>
+                    <td class="KlChuyenTiep sub">Ni 
+                            <div class="name">Nickel</div> 
+                            <div class="number">28</div> 
+                            <div class="weight">59</div>
+                    </td>
+                    </tr>
+                </table>
+                </td>
+                <td class="KlChuyenTiep sub">Cu 
+                    <div class="name">Copper</div> 
+                    <div class="number">29</div> 
+                    <div class="weight">63</div>
+                </td>
+                <td class="KlChuyenTiep sub">Zn 
+                    <div class="name">Zinc</div> 
+                    <div class="number">30</div> 
+                    <div class="weight">65</div>
+                </td>
+                <td class="klHauChuyenTiep sub">Ga 
+                    <div class="name">Gallium</div> 
+                    <div class="number">31</div> 
+                    <div class="weight">70</div>
+                </td>
+                <td class="aKim sub">Ge 
+                    <div class="name">Germanium</div> 
+                    <div class="number">32</div> 
+                    <div class="weight">72</div>
+                </td>
+                <td class="aKim sub">As 
+                    <div class="name">Arsenic</div> 
+                    <div class="number">33</div> 
+                    <div class="weight">75</div>
+                </td>
+                <td class="phiKim sub">Se 
+                    <div class="name">Selenium</div> 
+                    <div class="number">34</div> 
+                    <div class="weight">79</div>
+                </td>
+                <td class="phiKim sub">Br 
+                    <div class="name">Bromine</div> 
+                    <div class="number">35</div> 
+                    <div class="weight">80</div>
+                </td>
+                <td class="khiHiem sub">Kr 
+                    <div class="name">Krypton</div> 
+                    <div class="number">36</div> 
+                    <div class="weight">84</div>
+                </td>
             </tr>
             <tr>
-                <td class="stcol">5</td><td class="klKiem sub"><div class="name">Rubidi</div><div class="number">37</div>Rb</td>
-                <td class="klKiemTho sub"><div class="name">Stronti</div><div class="number">38</div>Sr</td>
-                <td class="KlChuyenTiep sub"><div class="name">Yttri</div><div class="number">39</div>Y</td>
-                <td class="KlChuyenTiep sub"><div class="name">Zirconi</div><div class="number">40</div>Zr</td>
-                <td class="KlChuyenTiep sub"><div class="name">Niobi</div><div class="number">41</div>Nb</td>
-                <td class="KlChuyenTiep sub"><div class="name">Molybden</div><div class="number">42</div>Mo</td>
-                <td class="KlChuyenTiep sub"><div class="name">Techneti</div><div class="number">43</div>Tc</td>
-                <td class="VIII">
+                <td class="stcol">5</td>
+                <td class="klKiem sub">Rb
+                    <div class="name">Rubidium</div>
+                    <div class="number">37</div>
+                    <div class="weight">85</div>
+                  </td>
+                  <td class="klKiemTho sub">Sr
+                    <div class="name">Strontium</div>
+                    <div class="number">38</div>
+                    <div class="weight">88</div>
+                  </td>
+                  <td class="KlChuyenTiep sub">Y
+                    <div class="name">Yttrium</div>
+                    <div class="number">39</div>
+                    <div class="weight">89</div>
+                  </td>
+                  <td class="KlChuyenTiep sub">Zr
+                    <div class="name">Zirconium</div>
+                    <div class="number">40</div>
+                    <div class="weight">91</div>
+                  </td>
+                  <td class="KlChuyenTiep sub">Nb
+                    <div class="name">Niobium</div>
+                    <div class="number">41</div>
+                    <div class="weight">93</div>
+                  </td>
+                  <td class="KlChuyenTiep sub">Mo
+                    <div class="name">Molybdenum</div>
+                    <div class="number">42</div>
+                    <div class="weight">96</div>
+                  </td>
+                  <td class="KlChuyenTiep sub">Tc
+                    <div class="name">Technetium</div>
+                    <div class="number">43</div>
+                    <div class="weight">98</div>
+                  </td>
+                  <td class="VIII">
                     <table class="VIIITable">
-                        <tr>
-                            <td class="KlChuyenTiep sub"><div class="name">Rutheni</div><div class="number">44</div>Ru</td>
-                            <td class="KlChuyenTiep sub"><div class="name">Rhodi</div><div class="number">45</div>Rh</td>
-                            <td class="KlChuyenTiep sub"><div class="name">Palladi</div><div class="number">46</div>Pd</td>
-                        </tr>
+                      <tr>
+                        <td class="KlChuyenTiep sub">Ru
+                          <div class="name">Ruthenium</div>
+                          <div class="number">44</div>
+                          <div class="weight">101</div>
+                        </td>
+                        <td class="KlChuyenTiep sub">Rh
+                          <div class="name">Rhodium</div>
+                          <div class="number">45</div>
+                          <div class="weight">103</div>
+                        </td>
+                        <td class="KlChuyenTiep sub">Pd
+                          <div class="name">Palladium</div>
+                          <div class="number">46</div>
+                          <div class="weight">106</div>
+                        </td>
+                      </tr>
                     </table>
-                </td>
-                <td class="KlChuyenTiep sub"><div class="name">Silver</div><div class="number">47</div>Ag</td>
-                <td class="KlChuyenTiep sub"><div class="name">Cadmi</div><div class="number">48</div>Cd</td>
-                <td class="klHauChuyenTiep sub"><div class="name">Indi</div><div class="number">49</div>In</td>
-                <td class="klHauChuyenTiep sub"><div class="name">Tin</div><div class="number">50</div>Sn</td>
-                <td class="aKim sub"><div class="name">Antimony</div><div class="number">51</div>Sb</td>
-                <td class="aKim sub"><div class="name">Telluri</div><div class="number">52</div>Te</td>
-                <td class="phiKim sub"><div class="name">Iodine</div><div class="number">53</div>I</td>
-                <td class="khiHiem sub"><div class="name">Xenon</div><div class="number">54</div>Xe</td>
+                  </td>
+                  <td class="KlChuyenTiep sub">Ag
+                    <div class="name">Silver</div>
+                    <div class="number">47</div>
+                    <div class="weight">108</div>
+                  </td>
+                  <td class="KlChuyenTiep sub">Cd
+                    <div class="name">Cadmium</div>
+                    <div class="number">48</div>
+                    <div class="weight">112</div>
+                  </td>
+                  <td class="klHauChuyenTiep sub">In
+                    <div class="name">Indium</div>
+                    <div class="number">49</div>
+                    <div class="weight">115</div>
+                  </td>
+                  <td class="klHauChuyenTiep sub">Sn
+                    <div class="name">Tin</div>
+                    <div class="number">50</div>
+                    <div class="weight">119</div>
+                  </td>
+                  <td class="aKim sub">Sb
+                    <div class="name">Antimony</div>
+                    <div class="number">51</div>
+                    <div class="weight">122</div>
+                  </td>
+                  <td class="aKim sub">Te
+                    <div class="name">Tellurium</div>
+                    <div class="number">52</div>
+                    <div class="weight">128</div>
+                  </td>
+                  <td class="phiKim sub">I
+                    <div class="name">Iodine</div>
+                    <div class="number">53</div>
+                    <div class="weight">127</div>
+                  </td>
+                  <td class="khiHiem sub">Xe
+                    <div class="name">Xenon</div>
+                    <div class="number">54</div>
+                    <div class="weight">131</div>
+                  </td>
             </tr>
             <tr>
                 <td class="stcol">6</td>
-                <td class="klKiem sub"><div class="name">Cesi</div><div class="number">55</div>Cs</td>
-                <td class="klKiemTho sub"><div class="name">Bari</div><div class="number">56</div>Ba</td>
-                <td class="lanTan sub"><div class="name">Lanthan</div><div class="number">57</div>La</td>
-                <td class="KlChuyenTiep sub"><div class="name">Hafni</div><div class="number">72</div>Hf</td>
-                <td class="KlChuyenTiep sub"><div class="name">Tantal</div><div class="number">73</div>Ta</td>
-                <td class="KlChuyenTiep sub"><div class="name">Tungsten</div><div class="number">74</div>W</td>
-                <td class="KlChuyenTiep sub"><div class="name">Rheni</div><div class="number">75</div>Re</td>
-                <td class="VIII">
+                <td class="klKiem sub">Cs
+                    <div class="name">Cesium</div>
+                    <div class="number">55</div>
+                    <div class="weight">133</div>
+                  </td>
+                  <td class="klKiemTho sub">Ba
+                    <div class="name">Barium</div>
+                    <div class="number">56</div>
+                    <div class="weight">137</div>
+                  </td>
+                  <td class="lanTan sub">La
+                    <div class="name">Lanthanum</div>
+                    <div class="number">57</div>
+                    <div class="weight">139</div>
+                  </td>
+                  <td class="KlChuyenTiep sub">Hf
+                    <div class="name">Hafnium</div>
+                    <div class="number">72</div>
+                    <div class="weight">178</div>
+                  </td>
+                  <td class="KlChuyenTiep sub">Ta
+                    <div class="name">Tantalum</div>
+                    <div class="number">73</div>
+                    <div class="weight">181</div>
+                  </td>
+                  <td class="KlChuyenTiep sub">W
+                    <div class="name">Tungsten</div>
+                    <div class="number">74</div>
+                    <div class="weight">184</div>
+                  </td>
+                  <td class="KlChuyenTiep sub">Re
+                    <div class="name">Rhenium</div>
+                    <div class="number">75</div>
+                    <div class="weight">186</div>
+                  </td>
+                  <td class="VIII">
                     <table class="VIIITable">
-                        <tr>
-                            <td class="KlChuyenTiep sub"><div class="name">Osmi</div><div class="number">76</div>Os</td>
-                            <td class="KlChuyenTiep sub"><div class="name">Iridi</div><div class="number">77</div>Ir</td>
-                            <td class="KlChuyenTiep sub"><div class="name">Platin</div><div class="number">78</div>Pt</td>
-                        </tr>
+                      <tr>
+                        <td class="KlChuyenTiep sub">Os
+                          <div class="name">Osmium</div>
+                          <div class="number">76</div>
+                          <div class="weight">190</div>
+                        </td>
+                        <td class="KlChuyenTiep sub">Ir
+                          <div class="name">Iridium</div>
+                          <div class="number">77</div>
+                          <div class="weight">192</div>
+                        </td>
+                        <td class="KlChuyenTiep sub">Pt
+                          <div class="name">Platinum</div>
+                          <div class="number">78</div>
+                          <div class="weight">195</div>
+                        </td>
+                      </tr>
                     </table>
-                </td>
-                <td class="KlChuyenTiep sub"><div class="name">Gold</div><div class="number">79</div>Au</td>
-                <td class="KlChuyenTiep sub"><div class="name">Mercury</div><div class="number">80</div>Hg</td>
-                <td class="klHauChuyenTiep sub"><div class="name">Thalli</div><div class="number">81</div>Tl</td>
-                <td class="klHauChuyenTiep sub"><div class="name">Lead</div><div class="number">82</div>Pb</td>
-                <td class="klHauChuyenTiep sub"><div class="name">Bismuth</div><div class="number">83</div>Bi</td>
-                <td class="klHauChuyenTiep sub"><div class="name">Poloni</div><div class="number">84</div>Po</td>
-                <td class="klHauChuyenTiep sub"><div class="name">Astatine</div><div class="number">85</div>At</td>
-                <td class="khiHiem sub"><div class="name">Radon</div><div class="number">86</div>Rn</td>
+                  </td>
+                  <td class="KlChuyenTiep sub">Au
+                    <div class="name">Gold</div>
+                    <div class="number">79</div>
+                    <div class="weight">197</div>
+                  </td>
+                  <td class="KlChuyenTiep sub">Hg
+                    <div class="name">Mercury</div>
+                    <div class="number">80</div>
+                    <div class="weight">201</div>
+                  </td>
+                  <td class="klHauChuyenTiep sub">Tl
+                    <div class="name">Thallium</div>
+                    <div class="number">81</div>
+                    <div class="weight">204</div>
+                  </td>
+                  <td class="klHauChuyenTiep sub">Pb
+                    <div class="name">Lead</div>
+                    <div class="number">82</div>
+                    <div class="weight">207</div>
+                  </td>
+                  <td class="klHauChuyenTiep sub">Bi
+                    <div class="name">Bismuth</div>
+                    <div class="number">83</div>
+                    <div class="weight">209</div>
+                  </td>
+                  <td class="klHauChuyenTiep sub">Po
+                    <div class="name">Polonium</div>
+                    <div class="number">84</div>
+                    <div class="weight">209</div>
+                  </td>
+                  <td class="klHauChuyenTiep sub">At
+                    <div class="name">Astatine</div>
+                    <div class="number">85</div>
+                    <div class="weight">210</div>
+                  </td>
+                  <td class="khiHiem sub">Rn
+                    <div class="name">Radon</div>
+                    <div class="number">86</div>
+                    <div class="weight">222</div>
+                  </td>
             </tr>
             <tr>
-                <td class="stcol">7</td><td class="klKiem sub"><div class="name">Franci</div><div class="number">87</div>Fr</td>
-                <td class="klKiemTho sub"><div class="name">Radi</div><div class="number">88</div>Ra</td>
-                <td class="actini sub"><div class="name">Actini</div><div class="number">89</div>Ac</td>
-                <td class="KlChuyenTiep sub"><div class="name">Rutherfordi</div><div class="number">104</div>Rf</td>
-                <td class="KlChuyenTiep sub"><div class="name">Dubni</div><div class="number">105</div>Db</td>
-                <td class="KlChuyenTiep sub"><div class="name">Seaborgi</div><div class="number">106</div>Sg</td>
-                <td class="KlChuyenTiep sub"><div class="name">Bohri</div><div class="number">107</div>Bh</td>
-                <td class="VIII">
+                <td class="stcol">7</td>
+                <td class="klKiem sub">Fr
+                    <div class="name">Franci</div>
+                    <div class="number">87</div>
+                    <div class="weight">223</div>
+                  </td>
+                  <td class="klKiemTho sub">Ra
+                    <div class="name">Radium</div>
+                    <div class="number">88</div>
+                    <div class="weight">226</div>
+                  </td>
+                  <td class="actini sub">Ac
+                    <div class="name">Actinium</div>
+                    <div class="number">89</div>
+                    <div class="weight">227</div>
+                  </td>
+                  <td class="KlChuyenTiep sub">Rf
+                    <div class="name">Rutherfordium</div>
+                    <div class="number">104</div>
+                    <div class="weight">267</div>
+                  </td>
+                  <td class="KlChuyenTiep sub">Db
+                    <div class="name">Dubnium</div>
+                    <div class="number">105</div>
+                    <div class="weight">270</div>
+                  </td>
+                  <td class="KlChuyenTiep sub">Sg
+                    <div class="name">Seaborgium</div>
+                    <div class="number">106</div>
+                    <div class="weight">271</div>
+                  </td>
+                  <td class="KlChuyenTiep sub">Bh
+                    <div class="name">Bohrium</div>
+                    <div class="number">107</div>
+                    <div class="weight">270</div>
+                  </td>
+                  <td class="VIII">
                     <table class="VIIITable">
-                        <tr>
-                            <td class="unknown sub"><div class="name">Hassi</div><div class="number">108</div>Hs</td>
-                            <td class="unknown sub"><div class="name">Meitneri</div><div class="number">109</div>Mt</td>
-                            <td class="unknown sub"><div class="name">Darmstadti</div><div class="number">110</div>Ds</td>
-                        </tr>
+                      <tr>
+                        <td class="unknown sub">Hs
+                          <div class="name">Hassium</div>
+                          <div class="number">108</div>
+                          <div class="weight">269</div>
+                        </td>
+                        <td class="unknown sub">Mt
+                          <div class="name">Meitnerium</div>
+                          <div class="number">109</div>
+                          <div class="weight">278</div>
+                        </td>
+                        <td class="unknown sub">Ds
+                          <div class="name">Darmstadtium</div>
+                          <div class="number">110</div>
+                          <div class="weight">281</div>
+                        </td>
+                      </tr>
                     </table>
-                </td>
-                <td class="unknown sub"><div class="name">Roentgeni</div><div class="number">111</div>Rg</td>
-                <td class="unknown sub"><div class="name">Copernici</div><div class="number">112</div>Cn</td>
-                <td class="unknown sub"><div class="name">Nihoni</div><div class="number">113</div>Nh</td>
-                <td class="unknown sub"><div class="name">Flerovi</div><div class="number">114</div>Fl</td>
-                <td class="unknown sub"><div class="name">Moscovi</div><div class="number">115</div>Mc</td>
-                <td class="unknown sub"><div class="name">Livermori</div><div class="number">116</div>Lv</td>
-                <td class="unknown sub"><div class="name">Tennessine</div><div class="number">117</div>Ts</td>
-                <td class="unknown sub"><div class="name">Oganesson</div><div class="number">118</div>Og</td>
+                  </td>
+                  <td class="unknown sub">Rg
+                    <div class="name">Roentgenium</div>
+                    <div class="number">111</div>
+                    <div class="weight">282</div>
+                  </td>
+                  <td class="unknown sub">Cn
+                    <div class="name">Copernicium</div>
+                    <div class="number">112</div>
+                    <div class="weight">285</div>
+                  </td>
+                  <td class="unknown sub">Nh
+                    <div class="name">Nihonium</div>
+                    <div class="number">113</div>
+                    <div class="weight">286</div>
+                  </td>
+                  <td class="unknown sub">Fl
+                    <div class="name">Flerovium</div>
+                    <div class="number">114</div>
+                    <div class="weight">289</div>
+                  </td>
+                  <td class="unknown sub">Mc
+                    <div class="name">Moscovium</div>
+                    <div class="number">115</div>
+                    <div class="weight">290</div>
+                  </td>
+                  <td class="unknown sub">Lv
+                    <div class="name">Livermorium</div>
+                    <div class="number">116</div>
+                    <div class="weight">293</div>
+                  </td>
+                  <td class="unknown sub">Ts
+                    <div class="name">Tennessine</div>
+                    <div class="number">117</div>
+                    <div class="weight">294</div>
+                  </td>
+                  <td class="unknown sub">Og
+                    <div class="name">Oganesson</div>
+                    <div class="number">118</div>
+                    <div class="weight">294</div>
+                  </td>
             </tr>
             <tr>
                 <td class="empty"></td>
             </tr>
             <tr>
                 <td class="stcol">LanTan</td>
-                <td class="lanTan sub"><div class="name">Ceri</div><div class="number">58</div>Ce</td>
-                <td class="lanTan sub"><div class="name">Praseodymi</div><div class="number">59</div>Pr</td>
-                <td class="lanTan sub"><div class="name">Neodymi</div><div class="number">60</div>Nd</td>
-                <td class="lanTan sub"><div class="name">Promethi</div><div class="number">61</div>Pm</td>
-                <td class="lanTan sub"><div class="name">Samari</div><div class="number">62</div>Sm</td>
-                <td class="lanTan sub"><div class="name">Europi</div><div class="number">63</div>Eu</td>
-                <td class="lanTan sub"><div class="name">Gadolini</div><div class="number">64</div>Gd</td>
-                <td class="VIII">
+                <td class="lanTan sub">Ce
+                    <div class="name">Ceri</div>
+                    <div class="number">58</div>
+                    <div class="weight">140</div>
+                  </td>
+                  <td class="lanTan sub">Pr
+                    <div class="name">Praseodymi</div>
+                    <div class="number">59</div>
+                    <div class="weight">141</div>
+                  </td>
+                  <td class="lanTan sub">Nd
+                    <div class="name">Neodymi</div>
+                    <div class="number">60</div>
+                    <div class="weight">144</div>
+                  </td>
+                  <td class="lanTan sub">Pm
+                    <div class="name">Promethi</div>
+                    <div class="number">61</div>
+                    <div class="weight">145</div>
+                  </td>
+                  <td class="lanTan sub">Sm
+                    <div class="name">Samari</div>
+                    <div class="number">62</div>
+                    <div class="weight">150</div>
+                  </td>
+                  <td class="lanTan sub">Eu
+                    <div class="name">Europi</div>
+                    <div class="number">63</div>
+                    <div class="weight">152</div>
+                  </td>
+                  <td class="lanTan sub">Gd
+                    <div class="name">Gadolini</div>
+                    <div class="number">64</div>
+                    <div class="weight">157</div>
+                  </td>
+                  <td class="VIII">
                     <table class="VIIITable">
-                        <tr>
-                            <td class="lanTan sub"><div class="name">Terbi</div><div class="number">65</div>Tb</td>
-                            <td class="lanTan sub"><div class="name">Dysprosi</div><div class="number">66</div>Dy</td>
-                            <td class="lanTan sub"><div class="name">Holmi</div><div class="number">67</div>Ho</td>
-                        </tr>
+                      <tr>
+                        <td class="lanTan sub">Tb
+                          <div class="name">Terbi</div>
+                          <div class="number">65</div>
+                          <div class="weight">159</div>
+                        </td>
+                        <td class="lanTan sub">Dy
+                          <div class="name">Dysprosi</div>
+                          <div class="number">66</div>
+                          <div class="weight">162</div>
+                        </td>
+                        <td class="lanTan sub">Ho
+                          <div class="name">Holmi</div>
+                          <div class="number">67</div>
+                          <div class="weight">165</div>
+                        </td>
+                      </tr>
                     </table>
-                </td>
-                <td class="lanTan sub"><div class="name">Erbi</div><div class="number">68</div>Er</td>
-                <td class="lanTan sub"><div class="name">Thuli</div><div class="number">69</div>Tm</td>
-                <td class="lanTan sub"><div class="name">Ytterbi</div><div class="number">70</div>Yb</td>
-                <td class="lanTan sub"><div class="name">Luteti</div><div class="number">71</div>Lu</td>
+                  </td>
+                  <td class="lanTan sub">Er
+                    <div class="name">Erbi</div>
+                    <div class="number">68</div>
+                    <div class="weight">167</div>
+                  </td>
+                  <td class="lanTan sub">Tm
+                    <div class="name">Thuli</div>
+                    <div class="number">69</div>
+                    <div class="weight">169</div>
+                  </td>
+                  <td class="lanTan sub">Yb
+                    <div class="name">Ytterbi</div>
+                    <div class="number">70</div>
+                    <div class="weight">173</div>
+                  </td>
+                  <td class="lanTan sub">Lu
+                    <div class="name">Luteti</div>
+                    <div class="number">71</div>
+                    <div class="weight">175</div>
+                  </td>
             </tr>
             <tr>
                 <td class="stcol">Actini</td>
-                <td class="actini sub"><div class="name">Thori</div><div class="number">90</div>Th</td>
-                <td class="actini sub"><div class="name">Protactini</div><div class="number">91</div>Pa</td>
-                <td class="actini sub"><div class="name">Urani</div><div class="number">92</div>U</td>
-                <td class="actini sub"><div class="name">Neptuni</div><div class="number">93</div>Np</td>
-                <td class="actini sub"><div class="name">Plutoni</div><div class="number">94</div>Pu</td>
-                <td class="actini sub"><div class="name">Americi</div><div class="number">95</div>Am</td>
-                <td class="actini sub"><div class="name">Curi</div><div class="number">96</div>Cm</td>
-                <td class="VIII">
+                <td class="actini sub">Th
+                    <div class="name">Thori</div>
+                    <div class="number">90</div>
+                    <div class="weight">232</div>
+                  </td>
+                  <td class="actini sub">Pa
+                    <div class="name">Protactini</div>
+                    <div class="number">91</div>
+                    <div class="weight">231</div>
+                  </td>
+                  <td class="actini sub">U
+                    <div class="name">Urani</div>
+                    <div class="number">92</div>
+                    <div class="weight">238</div>
+                  </td>
+                  <td class="actini sub">Np
+                    <div class="name">Neptuni</div>
+                    <div class="number">93</div>
+                    <div class="weight">237</div>
+                  </td>
+                  <td class="actini sub">Pu
+                    <div class="name">Plutoni</div>
+                    <div class="number">94</div>
+                    <div class="weight">244</div>
+                  </td>
+                  <td class="actini sub">Am
+                    <div class="name">Americi</div>
+                    <div class="number">95</div>
+                    <div class="weight">243</div>
+                  </td>
+                  <td class="actini sub">Cm
+                    <div class="name">Curi</div>
+                    <div class="number">96</div>
+                    <div class="weight">247</div>
+                  </td>
+                  <td class="VIII">
                     <table class="VIIITable">
-                        <tr>
-                            <td class="actini sub"><div class="name">Berkeli</div><div class="number">97</div>Bk</td>
-                            <td class="actini sub"><div class="name">Californi</div><div class="number">98</div>Cf</td>
-                            <td class="actini sub"><div class="name">Einsteini</div><div class="number">99</div>Es</td>
-                        </tr>
+                      <tr>
+                        <td class="actini sub">Bk
+                          <div class="name">Berkeli</div>
+                          <div class="number">97</div>
+                          <div class="weight">247</div>
+                        </td>
+                        <td class="actini sub">Cf
+                          <div class="name">Californi</div>
+                          <div class="number">98</div>
+                          <div class="weight">251</div>
+                        </td>
+                        <td class="actini sub">Es
+                          <div class="name">Einsteini</div>
+                          <div class="number">99</div>
+                          <div class="weight">252</div>
+                        </td>
+                      </tr>
                     </table>
-                </td>
-                <td class="actini sub"><div class="name">Fermi</div><div class="number">100</div>Fm</td>
-                <td class="actini sub"><div class="name">Mendelevi</div><div class="number">101</div>Md</td>
-                <td class="actini sub"><div class="name">Nobeli</div><div class="number">102</div>No</td>
-                <td class="actini sub"><div class="name">Lawrenci</div><div class="number">103</div>Lr</td>
+                  </td>
+                  <td class="actini sub">Fm
+                    <div class="name">Fermi</div>
+                    <div class="number">100</div>
+                    <div class="weight">257</div>
+                  </td>
+                  <td class="actini sub">Md
+                    <div class="name">Mendelevi</div>
+                    <div class="number">101</div>
+                    <div class="weight">258</div>
+                  </td>
+                  <td class="actini sub">No
+                    <div class="name">Nobeli</div>
+                    <div class="number">102</div>
+                    <div class="weight">259</div>
+                  </td>
+                  <td class="actini sub">Lr
+                    <div class="name">Lawrenci</div>
+                    <div class="number">103</div>
+                    <div class="weight">262</div>
+                  </td>
             </tr>
         </tbody>
     </table>
+    </div>
+    <div class="chuThich">
+      <table >
+          <tr>
+              <td class="stcol">Chú thích</td>
+              <td class="klKiem sub cell" data-info="Kim loại kiềm là các chất rắn màu trắng bạc. Các tinh thể ở dạng lập phương tâm khối, các liên kết trong mạng tinh thể đều yếu nên độ cứng thấp, các kim loại kiềm thổ đều khá mềm. Nhiệt độ nóng chảy và nhiệt độ sôi thấp, giảm dần từ Lithi đến Franci. Khối lượng riêng nhỏ với D< 5 g/cm3, độ dẫn điện lớn.">
+                Kim loại kiềm</td>
+              <td class="klKiemTho sub cell" data-info="Kiềm thổ là các kim loại có màu trắng bạc hoặc xám nhạt. Các kim loại kiềm thổ tương đối mềm, cứng hơn kim loại kiềm nhưng chúng vẫn có độ cứng thấp và giảm dần theo chiều từ Beri đến Bari. Nhiệt độ nóng chảy và nhiệt độ sôi cao hơn so với kim loại kiềm nhưng nhỏ hơn nhiều so với các nguyên tố khác.">
+                Kim loại kiềm thổ</td>
+              <td class="KlChuyenTiep sub cell" data-info="Các kim loại chuyển tiếp có đặc tính là có ứng suất căng, khối lượng riêng, nhiệt độ nóng chảy và nhiệt độ sôi cao. Cũng như những tính chất khác của kim loại chuyển tiếp, các tính chất này là do khả năng của các điện tử trong quỹ đạo d không có vị trí xác định trong mạng của kim loại.">
+                Kim loại chuyển tiếp</td>
+              <td class="klHauChuyenTiep sub cell" data-info="Vì đứng trước á kim trong bảng tuần hoàn nên các kim loại này sẽ có các tính chất vật lý như nhiệt độ nóng chảy...thấp hơn so với kim loại chuyển tiếp, tuy vậy thì độ âm điện của chúng cao hơn.">
+                Kim loại yếu</td>
+              <td class="aKim sub cell" data-info="Phụ thuộc vào điều kiện môi trường chúng có thể có các tính chất của kim loại như dẫn điện hay phi kim cách điện. Si và Ge là 2 chất bán dẫn quan trọng. Ở điều kiện bình thường, á kim có dạng rắn.">
+                Á kim</td>
+          </tr>
+          <tr>
+              <td></td>
+              <td class="phiKim sub cell" data-info="Trong môi trường không khí chúng thường tồn tại ở dạng phân tử. Đặc điểm nổi bật của phi kim là dễ nhận electron, chỉ trừ hidro. Hầu hết các phi kim đều dẫn nhiệt, dẫn điện kém, một số nguyên tố còn có sự biến tính (ví dụ như cacbon).">
+                phi kim</td>
+              <td class="khiHiem sub cell" data-info="Các khí hiếm có các lực tương tác nội nguyên tử cực kỳ yếu, kết quả là chúng có điểm nóng chảy và điểm sôi rất thấp. Điều này giải thích tại sao tất cả chúng đều ở dạng khí trong các điều kiện bình thường, thậm chí ngay cả các nguyên tố có nguyên tử lượng lớn hơn so với nhiều chất rắn thông thường khác.">
+                khí hiếm</td>
+              <td class="lanTan sub cell" data-info="Nó được tìm thấy trong một số khoáng vật đất hiếm, thường trong tổ hợp với xeri và các nguyên tố đất hiếm khác. Lanthan dẻo, dễ uốn và mềm đủ để cắt bằng dao.">
+                Lantan</td>
+              <td class="actini sub cell" data-info="Tất cả các nguyên tố thuộc họ này đều có tính phóng xạ và giải phóng năng lượng khi bị phân rã, với urani, thori và plutoni là những nguyên tố họ Actini dồi dào nhất trên Trái Đất - chúng được sử dụng trong các lò phản ứng hạt nhân và vũ khí hạt nhân.">
+                Actini</td>
+              <td class="unknown sub cell" data-info="">không xác định</td>
+          </tr>
+      </table>
 
-    <table class="chuThich">
-        <tr>
-            <td class="stcol">Chú thích</td>
-            <td class="klKiem">Kim loại kiềm</td>
-            <td class="klKiemTho">Kim loại kiềm thổ</td>
-            <td class="KlChuyenTiep">Kim loại chuyển tiếp</td>
-            <td class="klHauChuyenTiep">Kim loại hậu chuyển tiếp</td>
-            <td class="aKim">Á kim</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td class="phiKim">phi kim</td>
-            <td class="khiHiem">khí hiếm</td>
-            <td class="lanTan">Lantan</td>
-            <td class="actini">Actini</td>
-            <td class="unknown">không xác định</td>
-        </tr>
-    </table>
+      <div id="info"></div>
+    </div>
+
+  </div>
 
     <script src="script.js"></script>
 </body>

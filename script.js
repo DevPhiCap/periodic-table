@@ -1,11 +1,12 @@
-const cells = document.querySelectorAll('.name');
+const names = document.querySelectorAll('.name');
+// const cells = document.querySelectorAll('td');
 
-cells.forEach((cell) => {
-    cell.addEventListener('click', () => {
-        //get index of cell
-        const cellIndex = Array.from(cells).indexOf(cell);
-        const selectedCell = cells.item(cellIndex);
-        const utterance = new SpeechSynthesisUtterance(selectedCell.textContent);
+names.forEach((name) => {
+    name.addEventListener('click', () => {
+        //get index of name
+        const nameIndex = Array.from(names).indexOf(name);
+        const selectedName = names.item(nameIndex);
+        
 
         //change voice
         // const voices = window.speechSynthesis.getVoices();
@@ -13,6 +14,18 @@ cells.forEach((cell) => {
         // utterance.voice = englishVoice;
 
         //speak
+        const utterance = new SpeechSynthesisUtterance(selectedName.textContent);
         window.speechSynthesis.speak(utterance);
     });
+});
+
+let cells = document.querySelectorAll('.cell');
+let info = document.getElementById('info');
+
+cells.forEach(cell => {  
+  cell.addEventListener('click', () => {
+    let cellInfo = cell.getAttribute('data-info');
+    info.innerHTML = cellInfo;
+    cell.classList.add('pinned');
+  });
 });
