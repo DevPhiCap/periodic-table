@@ -7,12 +7,12 @@ body {
 .container {
     overflow: auto;
     height: 100vh;
-    padding: 20px;
+    padding: 0px;
   }
   
 .table-wrapper {
     position: relative;
-    width: 100%;
+    width: 1200px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -20,48 +20,22 @@ body {
 h1{
     text-align: center;
 }
-.table1{
+.periodicTable{
     position: absolute;
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
     table-layout: fixed;
     white-space: nowrap;
     overflow-x: auto;
+}
+th{
+    background-color: antiquewhite;
+}
 
+.div8B{
+    position: absolute;width: 210px;height: 100%;left: 50%;transform: translate(-50%,-50%); background-color: antiquewhite; text-align: center;
 }
-.table1 td,
-.table1 th {
-  text-align: center;
-}
-.chuThich{
-    position: absolute;
-    width: 700;
-    text-align: center;
-    top: 850;
-
-    margin: 0 auto;
-
-    position: relative;
-}
-.chuThich table{
-    width: 700;
-}
-.chuThich td {
-    text-align: center;
-    padding: 5px;
-}
-#info{
-    position: absolute;
-    top: 180px;
-    text-align: left;
-    font-size: 20px;
-
-    background-color: #ffe7eb;
-    border-radius: 10px;
-    border: 1px solid black;
-    padding: 12px;
-}
-td,th{
+.periodicTable td,th{
     position: relative;
     border: none;
     border-radius: 5px;
@@ -69,7 +43,39 @@ td,th{
     height: 70px;
 
     font-size: 22;
+    text-align: center;
 }
+.chuThich{
+    position: absolute;
+    width: 1400;
+    text-align: center;
+    top: 850;
+
+    position: relative;
+}
+.chuThich table{
+    width: 100%;
+}
+.chuThich td {
+    text-align: center;
+    padding: 5px;
+    font-size: 16;
+}
+#info{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left;
+    font-size: 20px;
+
+    width: 800;
+    background-color: #ffe7fc;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 12px;
+}
+
 .name{
     position:absolute;
     font-size: 10;
@@ -77,45 +83,31 @@ td,th{
     left: 50%;
     bottom: 3;
     transform: translate(-50%);
+    margin: 1;
 }
 .number{
     position:absolute;
     font-size: 12;
     top: 2;
     left: 2;
+    margin: 3;
 }
 .weight{
     position:absolute;
     font-size: 12;
     top: 2;
     right: 2;
-}
-th{
-    background-color: antiquewhite;
+    margin: 3;
 }
 .empty{
     border: none;
-    background-color: white;
+    
 }
 .stcol{
+    
     background-color: antiquewhite;
     color: black(83, 67, 67);
 }
-.VIII{
-    width:280;
-    background-color: white; 
-    position: relative;
-    padding: 0;
-    border: none;
-}
-.VIIITable{
-    width: 201;
-    position: absolute;
-    top: -2;
-    left: -2;
-    text-align: center;
-}
-
 .phiKim{    
     background-color: #e2eeff;
     border-color: #0060f0;
@@ -140,7 +132,7 @@ th{
     color: #00758c;
     stroke: #00758c;
 }
-.klHauChuyenTiep{
+.klYeu{
     background-color: #d6f9e8;
     border-color: #227754;
     color: #227754;
@@ -151,6 +143,12 @@ th{
     border-color: #945700;
     color: #945700;
     stroke: #945700;
+}
+.halogen{
+    background-color: #ecd6f9;
+    border-color: rgb(94, 11, 69);
+    color: rgb(94, 11, 69);
+    stroke: rgb(94, 11, 69);
 }
 .khiHiem{
     background-color: #ffe7eb;
