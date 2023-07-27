@@ -6,32 +6,45 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <table class="table1">
-    <thead>
-      <th class="empty"></th>
-      <th>IA</th>
-      <th>IIA</th>
-      <th>IIB</th>
-      <th>IVB</th>
-      <th>VB</th>
-      <th>VIB</th>
-      <th>VIIB</th>
-      <th style="border: 2px solid black;"></th>
-      <th style="border: 2px solid black;">VIIIB</th>
-      <th style="border: 2px solid black;"></th>
-      <th>IB</th>
-      <th>IIB</th>
-      <th>IIIA</th>
-      <th>IVA</th>
-      <th>VA</th>
-      <th>VIA</th>
-      <th>VIIA</th>
-      <th>VIIIA</th>
-  </thead>
-    <tbody>
-    </tbody>
-  </table>  
-
-      <script src="script.js"></script>
+  <table class="periodicTable">
+    <tr>
+      <td class='sub'><div class='number'>1</div><div class='name'>John</div><div class='symbol'>A</div></td>
+    </tr>
+    <tr>
+      <td class='sub'><div class='number'>2</div><div class='name'>Jane</div><div class='symbol'>B</div></td>
+    </tr>
+    <tr>
+      <td class='selected'></td>
+    </tr>
+    <tr>
+      <td class='selected'></td>
+    </tr>
+  </table>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get all the cells with the 'sub' class
+      const subCells = document.querySelectorAll('.sub');
+  
+      // Add an event listener to each cell
+      subCells.forEach(cell => {
+        cell.addEventListener('click', event => {
+          // Retrieve the value of the 'number' class
+          const number = event.currentTarget.querySelector('.number').textContent;
+  
+          // Update all the 'selected' cells with the retrieved value
+          const selectedCells = document.querySelectorAll('.selected');
+          selectedCells.forEach(selectedCell => {
+            selectedCell.textContent = number;
+          });
+  
+          // Speak out the name using the Web Speech API
+          const name = event.currentTarget.querySelector('.name').textContent;
+          const utterance = new SpeechSynthesisUtterance(name);
+          window.speechSynthesis.speak(utterance);
+        });
+      });
+    });
+  </script>
 </body>
 </html>

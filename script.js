@@ -1,15 +1,3 @@
-//print chu thich khi click vao
-let cells = document.querySelectorAll('.cell');
-let info = document.getElementById('info');
-
-cells.forEach(cell => {  
-  cell.addEventListener('click', () => {
-    let cellInfo = cell.getAttribute('data-info');
-    info.innerHTML = cellInfo;
-    cell.classList.add('pinned');
-  });
-});
-
 //du lieu cac nguyen to
 const data = [
   {line:1},
@@ -19,7 +7,7 @@ const data = [
   {line:2},
   {Number: 3, Symbol: "Li", Name: "Lithium", weight: 7},
   {Number: 4, Symbol: "Be", Name: "Beryllium", weight: 9},
-  {},{},{},{},{},{},{},{},{},{},
+  {},{},{line:8},{},{},{},{line:8},{},{},{},
   {Number: 5, Symbol: "B", Name: "Boron", weight: 11},
   {Number: 6, Symbol: "C", Name: "Carbon", weight: 12},
   {Number: 7, Symbol: "N", Name: "Nitrogen", weight: 14},
@@ -148,6 +136,30 @@ const data = [
   {Number: 103, Symbol: "Lr", Name: "Lawrencium", weight: 262},
   {}
 ];
+const classes = [
+    {values: ['3', '11', '19', '37', '55', '87'],
+      class: 'klKiem'},
+    {values: ['4', '12', '20', '38', '56', '88'],
+      class: 'klKiemTho'},
+    {values: ['21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '72', '73', '74', '75', '76', '77', '78', '79', '80', '104', '105', '106', '107'],
+      class: 'KlChuyenTiep'},
+    {values: ['13', '31', '49', '50', '81', '82', '83'],
+      class: 'klYeu'},
+    {values: ['1', '6', '7', '8', '15', '16', '34'],
+      class: 'phiKim'},
+    {values: ['5', '14', '32', '33', '51', '52', '84'],
+      class: 'aKim'},
+    {values: ['9', '17', '35', '53', '85'],
+      class: 'halogen'},
+    {values: ['2', '10', '18', '36', '54', '86'],
+      class: 'khiHiem'},
+    {values: ['108', '109', '110', '111', '112', '113', '114', '115', '116', '117', '118'],
+      class: 'unknown'},
+    {values: ['57', '58', '59', '60', '61', '62', '63', '64', '65', '66', '67', '68', '69', '70', '71'],
+      class: 'lantan'},
+    {values: ['89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99', '100', '101', '102', '103'],
+      class: 'actini'}
+  ];
 
 //print ra cac nguyen to
 const tableBody = document.querySelector('.periodicTable tbody');
@@ -160,17 +172,6 @@ data.forEach(sub => {
     const divNum = document.createElement('div');
     divNum.textContent = sub.Number;
     divNum.className = 'number';
-    divNum.setAttribute('kl-kiem', ['3', '11', '19', '37', '55', '87'].includes(divNum.textContent));
-    divNum.setAttribute('kl-kiem-tho', ['4', '12', '20', '38', '56', '88'].includes(divNum.textContent));
-    divNum.setAttribute('kl-chuyen-tiep', ['21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '72', '73', '74', '75', '76', '77', '78', '79', '80', '104', '105', '106', '107'].includes(divNum.textContent));
-    divNum.setAttribute('kl-yeu', ['13', '31', '49', '50', '81', '82','83',].includes(divNum.textContent));
-    divNum.setAttribute('phi-kim', ['1', '6', '7', '8', '15','16','34'].includes(divNum.textContent));
-    divNum.setAttribute('a-kim', ['5', '14', '32', '33', '51', '52','84'].includes(divNum.textContent));
-    divNum.setAttribute('halogen', ['9', '17', '35', '53', '85'].includes(divNum.textContent));
-    divNum.setAttribute('khi-hiem', ['2', '10', '18', '36', '54','86'].includes(divNum.textContent));
-    divNum.setAttribute('unknown', ['108', '109', '110', '111', '112', '113', '114', '115', '116', '117', '118'].includes(divNum.textContent));
-    divNum.setAttribute('lantan', ['57', '58', '59', '60', '61', '62', '63', '64', '65', '66', '67', '68', '69', '70', '71'].includes(divNum.textContent));
-    divNum.setAttribute('actini', ['89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99', '100', '101', '102', '103'].includes(divNum.textContent));
     const divSym = document.createElement('div');
     divSym.textContent = sub.Symbol;
     divSym.className = 'symbol';
@@ -188,75 +189,74 @@ data.forEach(sub => {
     tr.appendChild(td);
     count++;
     if (sub.line != null) {
+        td.classList.remove('sub');
         td.classList.add('stcol');
+        td.textContent = sub.line;
+    }
+    if (sub.line === 8) {
+        td.classList.remove('sub');
+        td.classList.add('selected');
         td.textContent = sub.line;
     }
     if (td.textContent.trim() === '') {
         td.classList.remove('sub');
     }
-    if (divNum.getAttribute('kl-kiem') === 'true') {
-        td.classList.add('klKiem');
-    }
-    if (divNum.getAttribute('kl-kiem-tho') === 'true') {
-            td.classList.add('klKiemTho');
-    }
-    if (divNum.getAttribute('kl-chuyen-tiep') === 'true') {
-            td.classList.add('KlChuyenTiep');
-    }
-    if (divNum.getAttribute('kl-yeu') === 'true') {
-            td.classList.add('klYeu');
-    }
-    if (divNum.getAttribute('phi-kim') === 'true') {
-        td.classList.add('phiKim');
-    }
-    if (divNum.getAttribute('a-kim') === 'true') {
-        td.classList.add('aKim');
-    }
-    if (divNum.getAttribute('halogen') === 'true') {
-            td.classList.add('halogen');
-    }
-    if (divNum.getAttribute('khi-hiem') === 'true') {
-            td.classList.add('khiHiem');
-    }
-    if (divNum.getAttribute('unknown') === 'true') {
-            td.classList.add('unknown');
-    }
-    if (divNum.getAttribute('lantan') === 'true') {
-            td.classList.add('lantan');
-    }
-    if (divNum.getAttribute('actini') === 'true') {
-            td.classList.add('actini');
-    }
+
+    const num = divNum.textContent;
+    classes.forEach((cls) => {
+        if (cls.values.includes(num)) {
+          td.classList.add(cls.class);
+        }
+      });
+    
     if (count > 18) {
         count = 0;
         tableBody.appendChild(tr);
         tr = document.createElement('tr');
     }
 });
+
+// append the final row if it's not empty
 if (count > 0) {
-    // append the final row if it's not empty
     tableBody.appendChild(tr);
 }
 
+//them thong tin khi click vao 1 nguyen to
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all the cells with the 'sub' class
+    const subCells = document.querySelectorAll('.sub');
 
-//doc ten cac nguyen to
-const names = document.querySelectorAll('.name');
+    // Add an event listener to each cell
+    subCells.forEach(cell => {
+      cell.addEventListener('click', event => {
+        // Retrieve the value of the 'number' class
+        const number = event.currentTarget.querySelector('.number').textContent;
 
-names.forEach((name) => {
-    name.addEventListener('click', () => {
-        //get index of name
-        const nameIndex = Array.from(names).indexOf(name);
-        const selectedName = names.item(nameIndex);
+        // Update the 'selected' cell with the retrieved value
+        const selectedCells = document.querySelectorAll('.selected');
+          selectedCells.forEach(selectedCell => {
+            selectedCell.textContent = number;
+          });
         
-        //change voice
-        // const voices = window.speechSynthesis.getVoices();
-        // const englishVoice = voices.find(voice => voice.lang === 'en-US');
-        // utterance.voice = englishVoice;
-
-        //speak
-        const utterance = new SpeechSynthesisUtterance(selectedName.textContent);
+        // Retrieve the value of the 'name' class
+        const name = event.currentTarget.querySelector('.name').textContent;
+        
+        // Speak out the name using the Web Speech API
+        const utterance = new SpeechSynthesisUtterance(name);
         window.speechSynthesis.speak(utterance);
+        });
     });
 });
 
-//them chi tiet cua cac nguyen to khi click
+
+//print chu thich khi click vao
+let cells = document.querySelectorAll('.cell');
+let info = document.getElementById('info');
+
+cells.forEach(cell => {  
+  cell.addEventListener('click', () => {
+    let cellInfo = cell.getAttribute('data-info');
+    info.innerHTML = cellInfo;
+    cell.classList.add('pinned');
+  });
+});
